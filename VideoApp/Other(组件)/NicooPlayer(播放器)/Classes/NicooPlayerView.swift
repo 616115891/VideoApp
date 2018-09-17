@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import AVKit
 import MediaPlayer
+import SnapKit
 
  public protocol NicooCustomMuneDelegate: class {
     /// 自定义右上角按钮点击操作

@@ -6,9 +6,9 @@
 //
 
 import UIKit
+import SnapKit
 
 /// 网络提示框， 用于播放远程视频时，网络变化，或4G网下播放，提示用户
-
 open class NicooNetWorkAlert: UIView {
     
     static private let kAlertViewWidth: CGFloat = 269.5

@@ -1,5 +1,5 @@
 //
-//  JYHttpClient.swift
+//  HttpClient.swift
 //  iRich
 //
 //  Created by apple on 2017/2/2.
@@ -18,14 +18,9 @@ enum ParamType {
 	case FORM
 }
 
-struct Demo {
-	var a:String
-	var b:String
-}
-
 var timeoutInterval:Double = 30
 
-class JYHttpClient: NSObject,URLSessionDelegate {
+class HttpClient: NSObject,URLSessionDelegate {
 	
 	
 	fileprivate var contentTypeKey: String {
@@ -34,13 +29,13 @@ class JYHttpClient: NSObject,URLSessionDelegate {
 	
     deinit {
         session.invalidateAndCancel()
-        print("JYHttpClient deinit")
+        print("HttpClient deinit")
     }
     
     fileprivate var session: URLSession!
 
-    open static let shareClient:JYHttpClient = {
-       let data = JYHttpClient()
+    open static let shareClient:HttpClient = {
+       let data = HttpClient()
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         data.session = URLSession(configuration: configuration, delegate: data, delegateQueue: nil)
