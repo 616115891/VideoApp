@@ -4,6 +4,7 @@ use_frameworks!
 def shared_pod
 	pod 'CoreStore'
 	pod 'SnapKit'
+	pod 'ACProgressHUD-Swift'
 end
 
 targetNameArray = [

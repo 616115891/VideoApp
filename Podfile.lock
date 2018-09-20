@@ -1,20 +1,24 @@
 PODS:
+  - ACProgressHUD-Swift (1.3)
   - CoreStore (5.1.0)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - ACProgressHUD-Swift
   - CoreStore
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ACProgressHUD-Swift
     - CoreStore
     - SnapKit
 
 SPEC CHECKSUMS:
+  ACProgressHUD-Swift: d973934a517312593015c78413f2de7bcc10c715
   CoreStore: 5fd51cbe7ea2d7b4dfc6327031ab6ff6f7c63175
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 05b10487d741808793a72ee9415d156f4706acf0
+PODFILE CHECKSUM: 27a337179533fd9b2c7ea6cf58e40e1583b479ba
 
 COCOAPODS: 1.5.3

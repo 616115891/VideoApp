@@ -55,7 +55,7 @@ class NicooPlayerControlView: UIView {
     /// 加载loadingView
     lazy var loadingView: UIActivityIndicatorView = {
         let loadActivityView = UIActivityIndicatorView()
-        loadActivityView.activityIndicatorViewStyle = .whiteLarge
+		loadActivityView.style = .whiteLarge
         loadActivityView.backgroundColor = UIColor.clear
         return loadActivityView
     }()
@@ -101,7 +101,7 @@ class NicooPlayerControlView: UIView {
         progressView.progressTintColor = UIColor.lightGray
         progressView.trackTintColor = UIColor(white: 0.2, alpha: 0.5)
         progressView.backgroundColor = UIColor.clear
-        progressView.contentMode = UIViewContentMode.scaleAspectFit
+		progressView.contentMode = UIView.ContentMode.scaleAspectFit
         progressView.tintColor = UIColor.clear
         return progressView
     }()
@@ -110,7 +110,7 @@ class NicooPlayerControlView: UIView {
         slider.minimumValue = 0
         slider.maximumValue = 1.0
         slider.backgroundColor = UIColor.clear
-        slider.contentMode = UIViewContentMode.scaleAspectFit
+		slider.contentMode = UIView.ContentMode.scaleAspectFit
         slider.minimumTrackTintColor = UIColor.white
         slider.maximumTrackTintColor = UIColor.clear
         slider.setThumbImage(NicooImgManager.foundImage(imageName: "NicooPlayer_slider"), for: .normal)

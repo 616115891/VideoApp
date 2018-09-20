@@ -34,7 +34,7 @@ class HttpClient: NSObject,URLSessionDelegate {
     
     fileprivate var session: URLSession!
 
-    open static let shareClient:HttpClient = {
+	public static let shareClient:HttpClient = {
        let data = HttpClient()
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
